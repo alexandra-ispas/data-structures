@@ -1,0 +1,14 @@
+//ISPAS Alexandra-Petrina 322CD            
+
+*RotateMatrix - I noticed a pattern in the strings by studying the 'ref' files and
+ computed the string directly. Initially, I created the matrix and then iterated over
+ it in the required order but it was slower and affected the 4th Test. Also, when 
+ I used the 'strcat' function it took almost 6 minutes for the 4th Test to be checked.
+
+*DecodeString - I userd the 'strtok' function to get the numbers from the string
+and converted them using 'atoi'.
+
+*KillPlayer - computes the distance between each crewmate and the impostor and
+always checks for the minimum distance. The last crewmate who has the minimum 
+distance is considered the closest one. If it is within the killRange and it's
+alive, it can be killed.
